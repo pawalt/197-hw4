@@ -4,7 +4,7 @@ import Title from './components/Title'
 import PostForm from './components/PostForm'
 import Posts from './components/Posts'
 
-export function App() {
+function App() {
   const [posts, changePosts] = useState([])
   return (
     <>
@@ -14,3 +14,5 @@ export function App() {
     </>
   )
 }
+
+export default App

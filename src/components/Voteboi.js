@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react'
 
-const Voteboi = ({ post, depth }) => {
+function Voteboi({ post, depth }) {
   const [count, changeCount] = useState(0)
 
   return (
-  <div>
-      <button class="icon" onClick={() => changeCount(count + 1)}>
-        <i class="fas fa-arrow-up"></i>
+    <div>
+      <button className="icon" type="button" onClick={() => changeCount(count + 1)}>
+        <i className="fas fa-arrow-up" />
       </button>
       {count}
-      <button class="icon" onClick={() => changeCount(Math.max(count - 1, 0))}>
-        <i class="fas fa-arrow-down"></i>
+      <button className="icon" type="button" onClick={() => changeCount(Math.max(count - 1, 0))}>
+        <i className="fas fa-arrow-down" />
       </button>
-  </div>
+    </div>
   )
 }
 
